@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a">
+        <animate attributeName="stop-color" values="#0f172a;#1e1b4b;#0f172a" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#1e293b">
+        <animate attributeName="stop-color" values="#1e293b;#311b92;#1e293b" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0284c7">
+        <animate attributeName="stop-color" values="#0284c7;#0d9488;#0284c7" dur="10s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Animated Grid / Network Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="800" y1="0" x2="800" y2="300" />
+    <line x1="1000" y1="0" x2="1000" y2="300" />
+  </g>
+
+  <!-- Pulse Orbs -->
+  <circle cx="150" cy="80" r="40" fill="#38bdf8" opacity="0.25" filter="url(#glow)">
+    <animate attributeName="r" values="30;50;30" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.15;0.35;0.15" dur="4s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="1050" cy="220" r="60" fill="#34d399" opacity="0.2" filter="url(#glow)">
+    <animate attributeName="r" values="50;75;50" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Main Title -->
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">
+    <text x="600" y="115" font-size="44" font-weight="800" fill="url(#textGrad)" letter-spacing="1">
+      Awesome Prior Authorization Automation 🏥⚡
+    </text>
+    <text x="600" y="165" font-size="20" font-weight="500" fill="#94a3b8" letter-spacing="0.5">
+      The Definitive Ecosystem Guide to AI Prior Auth, RCM &amp; FHIR Da Vinci PAS
+    </text>
+  </g>
+
+  <!-- Feature Badges -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+    <!-- Badge 1 -->
+    <rect x="220" y="210" width="200" height="36" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="320" y="233" fill="#38bdf8">💡 SaaS &amp; AI Platforms</text>
+
+    <!-- Badge 2 -->
+    <rect x="500" y="210" width="200" height="36" rx="18" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+    <text x="600" y="233" fill="#818cf8">🔥 Open-Source &amp; FHIR</text>
+
+    <!-- Badge 3 -->
+    <rect x="780" y="210" width="200" height="36" rx="18" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+    <text x="880" y="233" fill="#34d399">📊 Market &amp; Pricing Data</text>
+  </g>
+</svg>
