@@ -58,7 +58,7 @@ Below is a comparison of top SaaS platforms handling Prior Authorization, RCM, a
 
 Explore open-source implementations, FHIR implementation guides, and AI reference architectures. Sorted by GitHub Star Count (descending).
 
-| Project / Repository 📦 | GitHub Stars ⭐ | Category 🏷️ | Description 📝 |
+| Project / Repository 📦 | GitHub_Stars ⭐ | Category 🏷️ | Description 📝 |
 | :--- | :--- | :--- | :--- |
 | **[HL7 Da Vinci PAS IG](https://github.com/HL7/davinci-pas)** | [![Stars](https://img.shields.io/github/stars/HL7/davinci-pas?style=social&color=white)](https://github.com/HL7/davinci-pas/stargazers) | FHIR Standard | Official HL7 Da Vinci Prior Authorization Support (PAS) Implementation Guide using FHIR resources (Claim, ClaimResponse) and X12 278 translation. |
 | **[SMART on FHIR JavaScript Client](https://github.com/smart-on-fhir/client-js)** | [![Stars](https://img.shields.io/github/stars/smart-on-fhir/client-js?style=social&color=white)](https://github.com/smart-on-fhir/client-js/stargazers) | FHIR Library | Open-source SMART on FHIR JavaScript client library used to embed prior authorization apps directly within EHR systems (Epic, Cerner). |
